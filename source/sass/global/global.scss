@@ -12,10 +12,10 @@ body {
   margin: 0 auto;
   padding: 0;
 
-  min-width: 1920px;
+  min-width: 320px;
 
   font-family: $main-font;
-  color: $brand-color;
+  color: $text-color;
   background-color: $body-color;
 }
 
@@ -37,4 +37,5 @@ a {
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }

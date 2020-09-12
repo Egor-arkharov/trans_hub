@@ -1,7 +1,15 @@
 @font-face {
-  font-family: 'Work Sans';
-  src: url('../../fonts/work-sans-regular.woff2') format('woff2'), url('../../fonts/work-sans-regular.woff') format('woff');
+  font-family: "Avenir";
+  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }

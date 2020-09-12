@@ -5,6 +5,18 @@
   font-weight: $font-weight;
 }
 
+@mixin font-xxs {
+  @include basic-font;
+  font-size: $font-size-xxs;
+  line-height: $line-height-xxs;
+}
+
+@mixin font-xs {
+  @include basic-font;
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
+}
+
 @mixin font-s {
   @include basic-font;
   font-size: $font-size-s;
