@@ -1,0 +1,36 @@
+@mixin basic-font {
+  margin: 0;
+  padding: 0;
+  font-style: $font-style;
+  font-weight: $font-weight;
+}
+
+@mixin font-s {
+  @include basic-font;
+  font-size: $font-size-s;
+  line-height: $line-height-s;
+}
+
+@mixin font-l {
+  @include basic-font;
+  font-size: $font-size-l;
+  line-height: $line-height-l;
+}
+
+@mixin font-m {
+  @include basic-font;
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+}
+
+@mixin font-xl {
+  @include basic-font;
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+}
+
+@mixin font-xxl {
+  @include basic-font;
+  font-size: $font-size-xxl;
+  line-height: $line-height-xxl;
+}
