@@ -32,7 +32,7 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -46,7 +46,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function() {
-  return gulp.src("index.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))

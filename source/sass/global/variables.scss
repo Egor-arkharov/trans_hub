@@ -1,29 +1,36 @@
-$main-font: "Work Sans", "Аrial", sans-serif;
-$alt-font: "Anton", "Аrial", sans-serif;
+$main-font: "Avenir", "Аrial", sans-serif;
 
-$brand-color: #151c22;
-$alt-color: #727a82;
-$body-color: #ffffff;
-$background-color: #f1f2f4;
+$text-color: #ffffff;
+$alt-color: rgba(255, 255, 255, 0.5);
+$body-color: #0199ef;
+$title-color: #004460;
+$brand-color: #20afff;
 
 $font-style: normal;
-$font-weight: 400;
-$font-weight-bold: 600;
+$font-weight-reg: 400;
+$font-weight-bold: 500;
 
-$font-size-s: 14px;
-$line-height-s: 16px;
+$font-size-xxs: 12px;
+$line-height-xxs: 15px;
 
-$font-size-l: 16px;
-$line-height-l: 19px;
+$font-size-xs: 14px;
+$line-height-xs: 17px;
 
-$font-size-m: 18px;
-$line-height-m: 21px;
+$font-size-s: 16px;
+$line-height-s: 20px;
 
-$font-size-xl: 26px;
-$line-height-xl: 30px;
+$font-size-l: 18px;
+$line-height-l: 150%;
 
-$font-size-xxl: 86px;
-$line-height-xxl: 90px;
+$font-size-m: 24px;
+$line-height-m: 140%;
+
+$font-size-xl: 46px;
+$line-height-xl: 130%;
+
+$font-size-xxl: 80px;
+$line-height-xl: 98px;
+
 
 $mobile-width: 320px;
 $mobile-padding: 15px;
@@ -31,5 +38,5 @@ $mobile-padding: 15px;
 $tablet-width: 768px;
 $tablet-padding: 45px;
 
-$desktop-width: 1366px;
-$desktop-padding: 98px;
+$desktop-width: 1920px;
+$desktop-padding: 100px;
