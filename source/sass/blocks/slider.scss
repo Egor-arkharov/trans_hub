@@ -1,3 +1,54 @@
 .slider {
-  display: block;
+  position: relative;
+  color: $title-color;
+  background-color: $text-color;
+}
+
+.slider__wrapper {
+
+  padding: 15px 0 40px;
+  // padding: 15px 0 5px;
+}
+
+.slider__item-title {
+  @include font-l;
+  margin-bottom: 10px;
+}
+
+.slider__arrow {
+  display: none;
+  // background-image: url(../../img/arrow.svg);
+  // width: 48px;
+  // height: 88px;
+}
+
+.slider__toggle-list {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 10px 0;
+  background-color: $body-color;
+}
+
+.slider__toggle-item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.slider__toggle-button {
+  width: 15px;
+  height: 15px;
+  background-color: $brand-color;
+  border: $alt-color;
+  border-radius: 50%;
+
+  &--active {
+    background-color: $text-color;
+  }
 }

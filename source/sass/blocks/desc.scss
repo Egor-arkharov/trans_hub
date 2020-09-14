@@ -1,3 +1,25 @@
 .desc {
-  display: block;
+  background-color: $body-color;
+}
+
+.desc__wrapper {
+  padding: 15px 0;
+}
+
+.desc__title {
+  @include font-m;
+  margin-bottom: 7px;
+}
+
+.desc__text {
+  @include font-xs;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.desc__button {
+  @include font-xs;
+  padding: 13px 10px;
+  color: $title-color;
+  background-color: $text-color;
 }
