@@ -16,7 +16,7 @@ body {
 
   font-family: $main-font;
   color: $text-color;
-  background-color: $body-color;
+  background-color: $background-color;
 }
 
 img {
@@ -35,6 +35,9 @@ a {
 }
 
 button {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
   border: none;
   background: none;
   cursor: pointer;

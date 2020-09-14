@@ -1,3 +1,46 @@
 .nav {
-  display: block;
+  // height: 1256px;
+  background-image: url("../img/main-img@1x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 140px;
+  height: 340px;
 }
+
+.nav__wrapper {
+  @include font-s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: 15px;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+  order: 1;
+}
+
+.nav__item {
+  width: 50%;
+  margin-bottom: 15px;
+  white-space: nowrap;
+
+  &:nth-child(2n) {
+    text-align: right;
+  }
+}
+
+.nav__button {
+  @include font-xs;
+  font-weight: $font-weight-bold;
+  color: $brand-color;
+  border-bottom: 1px solid $brand-color;
+}
+
+// @media (min-width: $tablet-width) {
+//   background-size: cover;
+// }

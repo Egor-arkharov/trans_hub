@@ -7,29 +7,29 @@
     <meta name="description" content="Trans Hub 24 - сводим контакты грузоперевозчиков и грузовладельцев в одном месте, сделав их максимально удобными.">
     <title>Главная - Trans Hub 24</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="./fonts/AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="">
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper center">
         <ul class="header__languages">
-          <li>EN</li>
-          <li>RU</li>
+          <li class="header__languages-item"><button class="header__languages-button" type="button">EN</button></li>
+          <li class="header__languages-item"><button class="header__languages-button header__languages-button--ru" type="button">RU</button></li>
         </ul>
-
-        <span class="header__tel"><a href="#"></a></span>
 
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item">О компании</li>
-            <li class="header__nav-item">Рекламодателям</li>
-            <li class="header__nav-item">База знаний</li>
-            <li class="header__nav-item">Контакты</li>
+            <li class="header__nav-item"><a class="header__nav-link" href="tel:+78792226310">+7 (87922) 2-63-10</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">О компании</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Рекламодателям</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">База знаний</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
           </ul>
         </nav>
 
-        <ul class="header__user user">
-          <li class="user__enter">Вход</li>
-          <li class="user__reg">Регистрация</li>
+        <ul class="header__user">
+          <li class="header__user-item"><button class="header__user-button header__user-button--enter" type="button">Вход</button></li>
+          <li class="header__user-item"><button class="header__user-button" type="button">Регистрация</button></li>
         </ul>
 
       </div>
@@ -38,14 +38,14 @@
     <main>
       <section class="nav">
         <div class="nav__wrapper center">
-          <img class="nav__logo" src="#" alt="Логотип Trans Hub 24">
+          <img class="nav__logo" src="img/logo.svg" alt="Логотип Trans Hub 24" width="104" height="40">
 
           <ul class="nav__list">
-            <li class="nav__item">Найти перевозчика</li>
-            <li class="nav__item">Поиск груза</li>
-            <li class="nav__item">Перевозчики</li>
-            <li class="nav__item">Грузоотправители</li>
-            <li class="nav__item">Покупка и аренда техники</li>
+            <li class="nav__item"><a class="nav__link">Найти перевозчика</a></li>
+            <li class="nav__item"><a class="nav__link">Поиск груза</a></li>
+            <li class="nav__item"><a class="nav__link">Перевозчики</a></li>
+            <li class="nav__item"><a class="nav__link">Грузоотправители</a></li>
+            <li class="nav__item"><a class="nav__link">Покупка и аренда техники</a></li>
           </ul>
 
           <button type="button" class="nav__button">Разместить груз</button>
@@ -57,43 +57,49 @@
         <div class="desc__wrapper center">
           <h1 class="desc__title">Компания Transhub 24</h1>
           <p class="desc__text">Наша цель — свести контакты грузоперевозчиков и грузовладельцев в одном месте, сделав их максимально удобными.</p>
-          <button type="button" class="desc__button button">Найти перевозчика</button>
+          <button type="button" class="desc__button">Найти перевозчика</button>
         </div>
       </section>
 
       <section class="slider">
-        <div class="slider__wrapper">
+        <div class="slider__wrapper center">
           <ul class="slider__list">
             <li class="slider__item"></li>
             <li class="slider__item reg">
               <h2 class="slider__item-title">Авторизуйтесь, в личный кабинет грузоотправителя</h2>
               <div class="slider__item-content reg">
                 <div class="reg__desc">
-                  <img src="#" alt="">
+                  <img class="reg__img" src="#" alt="">
                   <p class="reg__text">Получите удобный инструмент размещения заявок на перевозку грузов и их отслеживания</p>
                 </div>
+
                 <form class="reg__form form" method="post" action="https://echo.htmlacademy.ru/courses">
 
                   <ul class="form__labels">
                     <li class="form__item">
-                      <label for="email">Email или Номер телефона</label>
-                      <input type="email" id="email" name="email" value="">
+                      <label class="form__label" for="email">Email или Номер телефона</label>
+                      <input class="form__input" type="email" id="email" name="email" placeholder="primer@gmail.com">
                     </li>
                     <li class="form__item">
-                      <label for="s">Пароль</label>
-                      <input type="password" id="s" name="size-type" value="S">
+                      <label class="form__label" for="password">Пароль</label>
+                      <input class="form__input" type="password" id="password" name="password">
                     </li>
                   </ul>
-                  <button type="button">Регистрация</button>
-                  <button type="submit">Вход</button>
-                  <button type="button">Забыли пароль?</button>
+                  <button class="form__signup" type="button">Регистрация</button>
+                  <button class="form__login" type="submit">Вход</button>
+                  <button class="form__lost-password" type="button">Забыли пароль?</button>
                 </form>
               </div>
             </li>
             <li class="slider__item"></li>
           </ul>
+          <button class="slider__arrow" type="button"></button>
+          <ul class="slider__toggle-list">
+            <li class="slider__toggle-item"><button class="slider__toggle-button" type="button"></button></li>
+            <li class="slider__toggle-item"><button class="slider__toggle-button slider__toggle-button--active" type="button"></button></li>
+            <li class="slider__toggle-item"><button class="slider__toggle-button" type="button"></button></li>
+          </ul>
         </div>
-        <button class="arrow" type="button"></button>
       </section>
 
     </main>

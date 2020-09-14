@@ -1,3 +1,16 @@
 .reg {
   display: block;
 }
+
+.reg__desc {
+  margin-bottom: 20px;
+}
+
+.reg__img {
+  display: none;
+}
+
+.reg__text {
+  @include font-xs;
+  font-weight: 400;
+}

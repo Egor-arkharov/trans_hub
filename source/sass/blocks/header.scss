@@ -1,3 +1,119 @@
 .header {
-  display: block;
+  border-bottom: 1px solid $border-color;
+}
+
+.header__wrapper {
+  @include font-xs;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 15px 0;
+  color: $alt-color;
+}
+
+.header__languages,
+.header__nav-list,
+.header__user {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__languages {
+  position: relative;
+
+  &::before {
+    content: "/";
+    position: absolute;
+
+    left: 44%;
+  }
+}
+
+.header__languages-item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.header__languages-button {
+  color: $alt-color;
+
+  &--ru {
+    color: $body-color;
+  }
+}
+
+.header__nav {
+  margin-top: 10px;
+  order: 1;
+}
+
+.header__nav-list {
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  width: 49%;
+  margin-bottom: 5px;
+}
+
+.header__nav-link {
+  color: $alt-color;
+}
+
+.header__user {
+  position: relative;
+
+  &::before {
+    content: "|";
+    position: absolute;
+
+    left: 41px;
+  }
+}
+
+.header__user-item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.header__user-button {
+  @include font-xs;
+  color: $alt-color;
+
+  &--enter {
+    color: $text-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding: 21px 0 19px;
+  }
+
+  .header__languages {
+    margin-right: 88px;
+  }
+
+  .header__languages-item {
+    margin-right: 15px;
+  }
+
+  .header__nav-item {
+    margin-right: 50px;
+  }
+
+  .header__user {
+    margin-left: auto;
+  }
+
+  .header__user-item {
+    margin-right: 15px;
+  }
 }

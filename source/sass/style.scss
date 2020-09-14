@@ -1,15 +1,14 @@
 //Все файлы scss
 
-@import "global/mixins.scss";
+@import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
-@import "global/fonts.scss";
+@import "global/mixins.scss";
 @import "blocks/header.scss";
-@import "blocks/center.scss";
 @import "blocks/nav.scss";
 @import "blocks/desc.scss";
 @import "blocks/slider.scss";
 @import "blocks/reg.scss";
 @import "blocks/form.scss";
-@import "blocks/user.scss";
+@import "blocks/center.scss";
 @import "blocks/visually-hidden.scss";
