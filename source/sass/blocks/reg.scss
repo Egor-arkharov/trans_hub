@@ -1,7 +1,3 @@
-.reg {
-  display: block;
-}
-
 .reg__desc {
   margin-bottom: 20px;
 }
@@ -13,4 +9,41 @@
 .reg__text {
   @include font-xs;
   font-weight: 400;
+}
+
+@media (min-width: $desktop-width) {
+  .reg {
+    display: flex;
+  }
+
+  .reg__img {
+    display: block;
+  }
+
+  .reg__desc {
+    margin: 0;
+    padding-top: 7px;
+    position: relative;
+  }
+
+  .reg__form {
+    width: 310px;
+  }
+
+  .reg__img--back {
+    position: absolute;
+    top: 55px;
+    left: 400px;
+    z-index: 1;
+  }
+
+  .reg__img--front {
+    position: relative;
+    z-index: 2;
+  }
+
+  .reg__text {
+    @include font-l;
+    margin-top: 30px;
+  }
 }

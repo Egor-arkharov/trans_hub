@@ -56,3 +56,41 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
+@media (min-width: $desktop-width) {
+  .form__labels {
+    margin-bottom: 26px;
+  }
+
+  .form__label {
+    @include font-xxs;
+  }
+
+  .form__item {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .form__input {
+    @include font-xs;
+    padding: 5px;
+    padding-left: 10px;
+    width: 310px;
+    height: 50px;
+  }
+
+  .form__signup,
+  .form__login {
+    @include font-s;
+    padding: 12px 10px 17px;
+    margin-bottom: 11px;
+  }
+
+  .form__lost-password {
+    @include font-xs;
+    padding: 12px 10px;
+  }
+}

@@ -23,3 +23,24 @@
   color: $title-color;
   background-color: $text-color;
 }
+
+@media (min-width: $desktop-width) {
+  .desc__wrapper {
+    padding: 8px 0 117px;
+  }
+
+  .desc__title {
+    @include font-xxl;
+    margin-bottom: 40px;
+  }
+
+  .desc__text {
+    @include font-m;
+    margin-bottom: 57px;
+  }
+
+  .desc__button {
+    @include font-s;
+    padding: 15px 30px;
+  }
+}
