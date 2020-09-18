@@ -14,7 +14,7 @@
       <div class="header__wrapper center">
         <ul class="header__languages">
           <li class="header__languages-item"><button class="header__languages-button" type="button">EN</button></li>
-          <li class="header__languages-item"><button class="header__languages-button header__languages-button--ru" type="button">RU</button></li>
+          <li class="header__languages-item"><button class="header__languages-button header__languages-button--active" type="button">RU</button></li>
         </ul>
 
         <nav class="header__nav">
@@ -28,7 +28,7 @@
         </nav>
 
         <ul class="header__user">
-          <li class="header__user-item"><button class="header__user-button header__user-button--enter" type="button">Вход</button></li>
+          <li class="header__user-item"><button class="header__user-button" type="button">Вход</button></li>
           <li class="header__user-item"><button class="header__user-button" type="button">Регистрация</button></li>
         </ul>
 
@@ -41,18 +41,21 @@
           <img class="nav__logo" src="img/logo.svg" alt="Логотип Trans Hub 24" width="104" height="40">
 
           <ul class="nav__list">
-            <li class="nav__item nav__item--active"><a class="nav__link">Найти перевозчика</a></li>
-            <li class="nav__item"><a class="nav__link">Поиск груза</a></li>
-            <li class="nav__item"><a class="nav__link">Перевозчики</a></li>
-            <li class="nav__item"><a class="nav__link">Грузоотправители</a></li>
-            <li class="nav__item nav__item--active"><a class="nav__link">Покупка и аренда техники</a></li>
+            <li class="nav__item nav__item--active"><a class="nav__link" href="#">Найти перевозчика</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Поиск груза</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Перевозчики</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Грузоотправители</a></li>
+            <li class="nav__item nav__item--active"><a class="nav__link" href="#">Покупка и аренда техники</a></li>
           </ul>
 
           <button type="button" class="nav__button">Разместить груз</button>
         </div>
       </section>
 
-      <img class="nav__img" src="img/main-img@1x.png" alt="">
+      <picture>
+        <source type="image/webp" srcset="img/main-img@1x.webp 1x, img/main-img@2x.webp 2x">
+          <img class="main__img" src="img/main-img@1x.png" srcset="img/main-img@2x.png">
+      </picture>
 
       <section class="desc">
         <div class="desc__wrapper center">
@@ -63,15 +66,23 @@
       </section>
 
       <section class="slider">
-        <div class="slider__wrapper center">
-          <ul class="slider__list">
-            <li class="slider__item visually-hidden"></li>
+        <div class="slider__wrapper">
+          <ul class="slider__list" style="left: -100%" tabindex="0">
+            <li class="slider__item">
+              <h2 class="slider__item-title">Lorem ipsum</h2>
+              <div class="slider__item-content">
+                <p>Lorem ipsum, sapien ornare vitae mauris integer metus eget, amet nulla maecenas sapien gravida nam
+                  urna sodales et curabitur ultricies at mauris malesuada mauris.
+                  Nibh eget pellentesque, mattis rutrum at, odio donec nam magna ultricies eu massa non porttitor vivamus
+                  molestie lectus fusce nec risus, sem nec sem.</p>
+              </div>
+            </li>
             <li class="slider__item">
               <h2 class="slider__item-title">Авторизуйтесь, в личный кабинет грузоотправителя</h2>
               <div class="slider__item-content reg">
                 <div class="reg__desc">
-                  <img class="reg__img reg__img--front" src="img/reg-preview-front.png" width="543" height="330" alt="">
-                  <img class="reg__img reg__img--back" src="img/reg-preview-back.png" width="357" height="282" alt="">
+                  <img class="reg__img reg__img--front" src="img/reg-preview-front.png" width="543" height="330" alt="Главная страница интерфейс личного кабинета">
+                  <img class="reg__img reg__img--back" src="img/reg-preview-back.png" width="357" height="282" alt="Страница интерфейса личного кабинета">
                   <p class="reg__text">Получите удобный инструмент размещения заявок на перевозку грузов и их отслеживания</p>
                 </div>
                 <form class="reg__form form" method="post" action="https://echo.htmlacademy.ru/courses">
@@ -91,7 +102,15 @@
                 </form>
               </div>
             </li>
-            <li class="slider__item visually-hidden"></li>
+            <li class="slider__item">
+              <h2 class="slider__item-title">Lorem ipsum</h2>
+              <div class="slider__item-content">
+                <p>Lorem ipsum, sapien ornare vitae mauris integer metus eget, amet nulla maecenas sapien gravida nam
+                  urna sodales et curabitur ultricies at mauris malesuada mauris.
+                  Nibh eget pellentesque, mattis rutrum at, odio donec nam magna ultricies eu massa non porttitor vivamus
+                  molestie lectus fusce nec risus, sem nec sem.</p>
+              </div>
+            </li>
           </ul>
 
           <button class="slider__arrow slider__arrow--back" type="button"></button>
@@ -107,5 +126,6 @@
     </main>
 
     <script src="js/scroll.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

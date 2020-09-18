@@ -30,16 +30,16 @@
     width: 310px;
   }
 
+  .reg__img--front {
+    position: relative;
+    z-index: 2;
+  }
+
   .reg__img--back {
     position: absolute;
     top: 55px;
     left: 400px;
     z-index: 1;
-  }
-
-  .reg__img--front {
-    position: relative;
-    z-index: 2;
   }
 
   .reg__text {

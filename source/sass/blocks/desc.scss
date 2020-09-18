@@ -1,9 +1,10 @@
 .desc {
+  margin-top: -1px;
   background-color: $body-color;
 }
 
 .desc__wrapper {
-  padding: 15px 0;
+  padding: 15px 0 20px;
 }
 
 .desc__title {
@@ -25,6 +26,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .desc {
+    position: relative;
+  }
+
   .desc__wrapper {
     padding: 8px 0 117px;
   }
