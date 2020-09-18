@@ -27,7 +27,7 @@
   width: 90%;
   font-weight: 400;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 7px;
   padding: 5px;
 }
 
@@ -58,8 +58,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding-left: 1px;
+  }
+
   .form__labels {
-    margin-bottom: 26px;
+    margin-bottom: 35px;
   }
 
   .form__label {
@@ -91,6 +95,6 @@
 
   .form__lost-password {
     @include font-xs;
-    padding: 12px 10px;
+    padding: 10px;
   }
 }

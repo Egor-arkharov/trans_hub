@@ -26,6 +26,7 @@
 
 .nav__link {
   @include font-s;
+  color: $text-color;
 }
 
 .nav__button {
@@ -35,10 +36,6 @@
   border-bottom: 1px solid $brand-color;
 }
 
-.nav__img {
-  margin-bottom: -4px;
-  transition: top 0.3s;
-}
 
 @media (min-width: $tablet-width) {
   .nav__item {
@@ -67,6 +64,7 @@
   .nav__wrapper {
     justify-content: start;
     align-items: center;
+    padding-bottom: 20px;
   }
 
   .nav__logo {
@@ -94,10 +92,24 @@
     margin-left: auto;
   }
 
-  .nav__img {
-    position: relative;
-    top: 0;
-    margin-top: -111px;
-    z-index: -1;
+  .nav__link--scroll {
+    color: $title-color;
+  }
+
+  .nav--scroll {
+    position: fixed;
+    width: 100%;
+    top: 58px;
+    background-color: $text-color;
+  }
+
+  .nav__item--active--scroll::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/arrow-min-scroll.svg");
+    width: 11px;
+    height: 6px;
+    top: 30px;
+    left: 45%;
   }
 }

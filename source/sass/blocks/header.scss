@@ -15,6 +15,23 @@
 .header__nav-link,
 .header__user-button {
   @include font-xs;
+  color: $alt-color;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+  }
+}
+
+.header__languages-button {
+  &--active {
+    color: $body-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
 }
 
 .header__languages,
@@ -43,14 +60,6 @@
   }
 }
 
-.header__languages-button {
-  color: $alt-color;
-
-  &--ru {
-    color: $body-color;
-  }
-}
-
 .header__nav {
   margin-top: 10px;
   order: 1;
@@ -63,10 +72,6 @@
 .header__nav-item {
   width: 49%;
   margin-bottom: 5px;
-}
-
-.header__nav-link {
-  color: $alt-color;
 }
 
 .header__user {
@@ -85,14 +90,6 @@
 
   &:last-child {
     margin: 0;
-  }
-}
-
-.header__user-button {
-  color: $alt-color;
-
-  &--enter {
-    color: $text-color;
   }
 }
 
@@ -149,5 +146,30 @@
 
   .header__user {
     margin-left: auto;
+  }
+
+  .header--scroll {
+    position: fixed;
+    width: 100%;
+    background-color: $text-color;
+  }
+
+  .header__wrapper--scroll {
+    color: $scroll-text-color;
+  }
+
+  .header__languages-button--scroll,
+  .header__nav-link--scroll,
+  .header__user-button--scroll {
+    color: $scroll-text-color;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+  }
+
+  .header__languages--active--scroll {
+    color: $brand-color;
   }
 }
