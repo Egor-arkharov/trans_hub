@@ -68,13 +68,13 @@
 @media (min-width: $desktop-width) {
   .slider__wrapper {
     position: relative;
-    padding: 0 75px 157px;
+    padding: 0 75px 50px;
   }
 
   .slider__item {
     width: 1700px;
     margin: 0 25px;
-    padding: 85px 310px 88px 260px;
+    padding: 35px 180px 35px 150px;
     border-radius: 40px;
 
     background-color: $text-color;
@@ -101,17 +101,17 @@
     width: 46px;
     height: 88px;
 
-    top: 332px;
+    top: 30%;
 
     z-index: 3;
 
     &--back {
-      left: 170px;
+      left: 150px;
       transform: rotate(180deg);
     }
 
     &--forward {
-      right: 220px;
+      right: 170px;
     }
   }
 }

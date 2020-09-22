@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  let DESK_SIZE = 1900;
+  let DESK_SIZE = 1300;
 
   let header = document.querySelector('.header');
   let headerWrapper = header.querySelector('.header__wrapper');

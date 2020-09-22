@@ -121,5 +121,44 @@
   slider.addEventListener('keydown', onKeyCheckPage);
   prev.addEventListener('click', slidePrev);
   forward.addEventListener('click', slideForward);
-  toggleButtonsList.addEventListener('click', changeActiveButtons)
+  toggleButtonsList.addEventListener('click', changeActiveButtons);
+
+
+
+  sliderList.addEventListener('touchstart', handleTouchStart, false);
+  sliderList.addEventListener('touchmove', handleTouchMove, false);
+  // sliderList.addEventListener('touchend', handleTouchEnd, false);
+
+  var xDown = null;
+
+  let handleTouchStart = function (evt) {
+    xDown = evt.touches[0].clientX;
+  }
+
+  let handleTouchMove = function (evt) {
+      if (!xDown) {
+          return;
+      }
+
+      var xUp = evt.touches[0].clientX;
+      var xDiff = xDown - xUp;
+
+      if ( xDiff > 0 ) {
+          /* left swipe */
+          slidePrev();
+      } else {
+          /* right swipe */
+          slideForward();
+      }
+
+      xDown = null;
+      yDown = null;
+  };
+
+  // let handleTouchEnd = function () {
+  //   var xDown = null;
+  //   var yDown = null;
+  // }
+
+
 })();
