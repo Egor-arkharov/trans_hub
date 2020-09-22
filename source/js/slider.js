@@ -133,6 +133,7 @@
 
   let handleTouchStart = function (evt) {
     xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
   }
 
   let handleTouchMove = function (evt) {
