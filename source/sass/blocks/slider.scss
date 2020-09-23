@@ -71,6 +71,11 @@
     padding: 0 75px px;
   }
 
+  .slider__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .slider__item {
     width: 1700px;
     margin: 0 25px;
@@ -82,6 +87,7 @@
 
   .slider__item-title {
     @include font-xl;
+    padding-right: 140px;
     font-weight: 750;
     margin-bottom: 35px;
   }
@@ -106,12 +112,12 @@
     z-index: 3;
 
     &--back {
-      left: 150px;
+      left: 7%;
       transform: rotate(180deg);
     }
 
     &--forward {
-      right: 170px;
+      right: 7%;
     }
   }
 }
